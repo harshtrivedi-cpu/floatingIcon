@@ -1,0 +1,35 @@
+.askanything_section_container {
+  box-sizing: border-box;
+
+}
+
+.heading_section {
+   text-align: start;
+  // padding: 16px 16px 4px 16px;
+   vertical-align: middle;
+  
+   & .heading_text {
+      width: 100%;
+     font-size: 18px;
+     font-weight: 700;
+     font-style: bold;
+     line-height: 24px;
+     color: #212121;
+     margin: 0;
+     display: flex;
+     gap: 8px;
+     align-items: center;
+
+     .highlighted_text {
+       color: #D02F2F;
+       font-weight: 600;
+       font-size: 8px;
+       line-height: 100%;
+       background-color: #FFE2E2;
+       border-radius: 12px;
+       padding: 3px 5px;
+       text-transform: uppercase;
+       
+     }
+   }
+}

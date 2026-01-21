@@ -1,0 +1,93 @@
+.floating_wrapper {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 40px;
+  background: #fff;
+  transition: all 0.6s ease;
+  overflow: hidden;
+  box-shadow: 0 0px 20px 0 #fddcdc, ;
+ 
+}
+
+.floating_wrapper.open {
+  width: calc(100% - 60px);
+  height: 52px;
+  padding-right:4px;
+  padding-left: 16px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #D02F2F, #FF8400) border-box;
+  border: 1px solid transparent;
+}
+
+.floating_wrapper.close {
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, #D02F2F, #FF8400) border-box;
+  border: 1px solid transparent;
+}
+
+.floating_icon {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  
+}
+
+.floating_input {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #24272C;
+  width: 0;
+  opacity: 0;
+  transition: all 0.6s ease;
+  background: transparent;
+ &::placeholder {
+    color: #24272C; 
+    opacity: 1;
+  }
+}
+
+.floating_input.typing::placeholder {
+  color: #24272C; 
+  
+}
+.floating_wrapper.open .floating_input {
+  width: 100%;
+  opacity: 1;
+}
+
+.placeholder_wrapper {
+  width: 100%;
+  
+}
+
+.floating_sentence {
+  font-size: 13px;
+  font-weight: 400;
+  align-items: start;
+  color: #24272C;
+  margin-bottom: 2px;
+  animation: 0.8s ease forwards;
+  background: linear-gradient(
+    180deg,
+    rgba(36, 39, 44, 0) 32.25%,
+    #24272C 85.19%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+}
+

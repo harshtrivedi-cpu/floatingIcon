@@ -1,0 +1,53 @@
+.people_check_section_container {
+    border: 1px solid #D02F2F33;
+    border-radius: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+    align-items: center;
+    background: linear-gradient(180deg, #FFFFFF, #FFEFEF);
+    padding: 17px 15px 11px 14px;
+
+    & .star_icon {
+        width: 28px;
+        height: 28px;
+        margin: 0 0 6px 0;
+
+    }
+
+    & .side_arrow {
+        width: 6px;
+        height: 10px;
+        margin: 0 0 5px 0;
+    }
+
+}
+
+.text_section {
+    // min-height: 84px;
+    width: 100%;
+    color: #24272C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    vertical-align: text-top;
+    line-height: 20px;
+
+    & .upper_text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 100%;
+        margin: 1px 0px 0 0;
+    }
+
+    & .lower_text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 5px 0px 0px 0;
+
+    }
+}

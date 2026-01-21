@@ -1,0 +1,71 @@
+.suggestion_tabs_container {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; 
+  row-gap: 8px;
+}
+
+.scroll_row {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+  animation: scroll-left 20s linear infinite;
+  height: 32px;
+}
+
+.scroll_row.reverse {
+  animation: scroll-right 28s linear infinite;
+}
+
+.scroll_row.fast {
+  animation-duration: 0.2s;
+}
+
+.scroll_row.reverse.fast {
+  animation-duration: 0.2s;
+}
+
+.tab {
+  border: none;
+  background: #D02F2F1A;
+  border-radius: 16px;
+  padding: 8px 6px 6px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #D02F2F;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  & .arrow_icon {
+    width: 3px;
+    height: 7px;
+  }
+}
+
+.tab:hover {
+  background: #E7EAED;
+  color: #24272C;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
