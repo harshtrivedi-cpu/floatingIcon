@@ -1,0 +1,138 @@
+.heading_text {
+  font-size: 17px;
+  font-weight: 700;
+  color: #24272C;
+  margin-bottom: 12px;
+}
+
+.colslider {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.colslider-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  scroll-snap-align: start;
+}
+
+.colslider-item {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  color: #24272C;
+  .icons {
+    display: flex;
+    gap: 8px;
+   
+  }
+
+  .text {
+    font-size: 16px;
+    font-weight: 600;  
+  }
+  .sub_text {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+}
+.text_container {
+  margin: auto 0;   
+}
+
+   .icons {
+  margin-top: auto;  
+  display: flex;
+  gap: 8px;
+  padding-bottom: 12px; 
+}
+  .new_icon {
+      width: 32px;
+      height: 16.829999923706055px;
+      position: absolute;
+      top: 8px;
+    
+    }
+
+
+.pink {
+  background: linear-gradient(180deg, #F6CACA, #FFA4A4);
+}
+.Bikes {
+  background: linear-gradient(180deg, #FCE6C4, #FFD595);
+}
+.Finance {
+  background: linear-gradient(180deg, #E8CDFF, #D8A9FF);
+}
+.Offers {
+  background: linear-gradient(180deg, #FFBC7E, #FF854C);
+}
+.Scooter {
+  background: linear-gradient(180deg, #A9E7FF, #78DAFF);
+}
+.Compare {
+  background: linear-gradient(180deg, #FEE698, #FFDE73);
+}
+.Electric_vechicle {
+  background: linear-gradient(180deg, #A8FFDCCC, #40ECA7B2);
+}
+.News {
+  background: linear-gradient(180deg, #C7D5FF, #7FA0FF);
+}
+
+.pink .icons img {
+  width: 58px;
+  height: 58px;
+}
+
+.Bikes .icons img {
+  width: 130px;
+  height: 65px;
+}
+
+.Finance .icons img {
+  width: 74px;
+  height: 64.55319213867188px;
+}
+
+.Offers .icons img {
+  width: 77.30299377441406px;
+  height: 78.08575439453125px;
+}
+
+.Scooter .icons img {
+  width: 100px;
+  height: 60px;
+}
+
+.Compare .icons img {
+  width: 130px;
+  height: 64px;
+}
+
+.Electric_vechicle .icons img {
+  width: 112px;
+  height: 68px;
+}
+
+.News .icons img {
+  width: 77.99647521972656px;
+  height: 70.76119232177734px;
+}

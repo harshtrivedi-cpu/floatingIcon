@@ -2,6 +2,7 @@
 import './App.css'
 import AskanythingSection from './compoents/askAnythingSection/AskankythingSection'
 import FloatingIcon from './compoents/FloatingIcon'
+import Colslider from './compoents/slideSection/Colslider'
 
 function App() {
 
@@ -9,6 +10,8 @@ function App() {
     <>
     <AskanythingSection/>
     <FloatingIcon/>
+    <br/>
+    <Colslider/>
     </>
   )
 }
